@@ -27,6 +27,6 @@ C:\Users\%USERNAME%\AppData\LocalLow\infiniteloop Co,Ltd\VirtualCast\EmbeddedScr
 ## Lua バイナリの配置（オプション）
 
 * Vキャス内ではなく、PC上でデバッグしたい場合。
-* 必要に応じて luaのバイナリを EmbeddedScriptWorkspace 置いておく。
+* 必要に応じて luaのバイナリを EmbeddedScriptWorkspace 置いておく(exeとdll)。
 	* [luaの環境構築](../lua/how_to_create_lua_env/) を参照。
 * VSCode、ctrl + @ でコンソールを出す。

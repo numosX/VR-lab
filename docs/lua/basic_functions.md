@@ -16,7 +16,7 @@
 複数行の
 コメント
 ]]
-```
+``` 
 
 ## 変数
 
@@ -25,6 +25,10 @@ local hoge	= 1			--数値
 local hoge	= "文字列"	--数値
 local hoges	= {}		--配列
 print(hoges[1])			-- 配列の取得（1-indexed ぽい; 詳細未確認）
+local val_of = {a=1}		--連想配列
+print(val_of.a)
+print(val_of[a])
+
 ```
 
 ## 条件分岐
@@ -48,5 +52,26 @@ end
 ```lua
 function hoge(arg)
 
+end
+```
+
+## ソート
+
+```lua
+
+local sushi_of = {
+	{name="maguro",	kakaku=100},
+	{name="uni", 	kakaku=1000},
+	{name="tako",	kakaku=200},
+}
+
+local sort_by_kakaku = function(a, b)
+	return (a.kakaku < b.kakaku)
+end
+
+table.sort(sushi_of, sort_by_kakaku)
+
+for index, value in pairs(sushi_of) do
+	print(value.name..":"..value.kakaku)
 end
 ```

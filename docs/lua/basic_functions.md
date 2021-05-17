@@ -67,11 +67,11 @@ for i=0, 10, 2 do
 end
 
 -- "i"pairs
-for i, val in ipairs(a_list) do
+for i, val in ipairs(some_list) do
 	-- do something...
 end
 
-for key, val in pairs(a_dict) do
+for key, val in pairs(some_dict) do
 	-- do something...
 end
 

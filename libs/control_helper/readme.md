@@ -6,18 +6,18 @@
 
 ```lua
 local ControlHelper = require "control_helper"
-local control_helper = ControlHelper:new()
+local controller = ControlHelper:new()
 
 function update()
-	if control_helper:is_double_grip() then
+	if controller:is_double_grip() then
 		-- 2 回素早くグリップされた場合の処理を書く
-	elseif control_helper:is_single_grip() then
+	elseif controller:is_single_grip() then
 		-- 1 回グリップされた場合の処理を書く
 	end	
 end
 
 function onUse(use)
-	control_helper:grip()
+	controller:grip()
 end
 ```
 

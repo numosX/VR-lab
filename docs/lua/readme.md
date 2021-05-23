@@ -9,6 +9,8 @@
 
 * [環境構築](./how_to_create_lua_env/)
 * [オブジェクト思考で書く](./oop_in_lua/)
+	* [クラスの書き方](./oop_in_lua/how_to_make_class/readme.md)
+	* [クラスの継承方法](./oop_in_lua/inheritance/readme.md)
 
 ## その他
 * モジュール

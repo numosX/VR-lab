@@ -82,8 +82,8 @@ return {
 
 ```lua
 local ToyClass  = require "class_template"
-local hoge  = ToyClass:new()    -- コンストラクタを呼び、オブジェクトを生成
-hoge:setName("hugahuga")        -- オブジェクトとメンバ関数はコロンでつなぐ。
+local hoge  = ToyClass:new()	-- コンストラクタを呼び、オブジェクトを生成
+hoge:set_name("hugahuga")		-- オブジェクトとメンバ関数はコロンでつなぐ。
 ```
 
 ## デモスクリプト

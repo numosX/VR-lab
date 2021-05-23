@@ -1,13 +1,13 @@
 local ToyClass = require "class_template"
 
-hoge = ToyClass:new()
-print(hoge:getName())
+local tester = ToyClass:new()
+print(tester:get_name())
 
-hoge:setName("hoge")
-print(hoge:getName())
+tester:set_name("hoge")
+print(tester:get_name())
 
 for i = 1, 5 do
-    hoge:countUp()
+    tester:count_up()
     print("-----")
-    print(hoge:getCounter())
+    print(tester:get_counter())
 end

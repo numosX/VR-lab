@@ -38,4 +38,4 @@ end
 
 ## 関連文章
 
-* [クラスの実装方法](../how_to_make_class/readme.md)
+* [クラスの実装方法](../how_to_make_class/)

@@ -15,7 +15,7 @@
 	* Workspace 以下のディレクトリ構造は、下記のようになるはず
 ```
 your_VCI_directory/
-├ directional_controller.lua
+├ directional_control_helper.lua
 └ main.lua
 ```
 

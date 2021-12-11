@@ -59,7 +59,7 @@ end
 ```
 
 
-## 使用例
+## 使用例（動画：クリックで再生）
 
 [![thumbnail](https://pbs.twimg.com/ext_tw_video_thumb/1469720234323972097/pu/img/QfXqjtR87SxDyZy4.jpg)](https://video.twimg.com/ext_tw_video/1469720234323972097/pu/vid/1280x720/PlAoiR8a2QdtZqTa.mp4)
 

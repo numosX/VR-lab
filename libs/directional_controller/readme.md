@@ -2,7 +2,26 @@
 
 ## 概要
 
-* 十字キーを簡単に実装できるクラス
+* ジェスチャーで操作できるUIを作る際、自分の視点から見た変化量を計算することは難しい。
+* 例えば、左に動かしたからといって、x座標が必ず減るとは限らない。
+* これを簡単にするクラスは自分の知る限り提供されていなかった。そこで作成することにした。
+
+## 使用準備
+
+* Unity で VCI Object の設定を変える
+	* Script Size を 2 にする
+	* Name を それぞれ main と directional_controller にする
+* main.lua と同じディレクトリに directional_controller.lua を配置
+	* Workspace 以下のディレクトリ構造は、下記のようになるはず
+```
+your_VCI_directory/
+├ directional_controller.lua
+└ main.lua
+```
+
+## 使用方法
+
+* 下のようなコードをmain.luaに書く。
 
 ```lua
 local DirectionalControlHelper	= require "directional_controller"
@@ -29,18 +48,6 @@ end
 
 ```
 
-## 使用準備
-
-* Unity で VCI Object の設定を変える
-	* Script Size を 2 にする
-	* Name を それぞれ main と directional_controller にする
-* main.lua と同じディレクトリに directional_controller.lua を配置
-	* Workspace 以下のディレクトリ構造は、下記のようになるはず
-```
-your_VCI_directory/
-├ directional_controller.lua
-└ main.lua
-```
 
 ## 改変履歴
 * 2021/12/11 21:28 v0.1 公開

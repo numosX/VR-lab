@@ -50,8 +50,8 @@ end
 
 ## 使用例
 
-* バグがあるときに撮影したので left と right が逆になってます（修正済み）
 [![thumbnail](https://pbs.twimg.com/ext_tw_video_thumb/1469640767039623168/pu/img/TjMiDg2WjQBh4ySp.jpg:thumb)](https://video.twimg.com/ext_tw_video/1469640767039623168/pu/vid/480x270/EH_c4qG0JJY1FGnz.mp4)
+* バグがあるときに撮影したので left と right が逆になってます（修正済み）
 
 ## 改変履歴
 * 2021/12/11 21:28 v0.1 公開

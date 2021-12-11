@@ -1,12 +1,12 @@
-# ControlHelper
+# DirectionalControlHelper
 
 ## 概要
 
 * 十字キーを簡単に実装できるクラス
 
 ```lua
-local DirectionalController = require "directional_controller"
-local controller	    	= DirectionalController:new("Cube") -- "VCI SubItem 名、この例では Cube"
+local DirectionalControlHelper	= require "directional_controller"
+local controller	    		= DirectionalControlHelper:new("Cube") -- "VCI SubItem 名、この例では Cube"
 
 function onUse(use)
     if not vci.assets.IsMine then return end

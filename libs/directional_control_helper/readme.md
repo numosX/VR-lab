@@ -68,7 +68,10 @@ end
 * 曲を選択する例
 	* [![thumbnail](https://pbs.twimg.com/ext_tw_video_thumb/1469720234323972097/pu/img/QfXqjtR87SxDyZy4.jpg)](https://video.twimg.com/ext_tw_video/1469720234323972097/pu/vid/1280x720/PlAoiR8a2QdtZqTa.mp4)
 
+## 応用案
 
+* リモコンとして、他のVCIを操作する。
+* 半径nメートル以内にいる場合、messageを受け付けるなどの処理を追加するとなお良い。
 
 ## 改変履歴
 * 2021/12/11 21:28 v0.1 公開

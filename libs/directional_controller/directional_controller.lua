@@ -61,7 +61,7 @@ local methods = {
 local new = function(self, item_name)
     local obj = vci.assets.GetTransform(item_name)
     if obj == nil then
-        print("[!] DirectionalCube: Initialization Error")
+        print("[!] DirectionalController: Initialization Error")
         print("missing vci subitem "..item_name)
         return nil
     end

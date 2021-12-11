@@ -45,3 +45,6 @@ your_VCI_directory/
 ## 改変履歴
 * 2021/12/11 21:28 v0.1 公開
 * 2021/12/11 23:22 v0.1a バグ修正
+
+## 参考文献
+[クォータニオン計算便利ノート](https://www.mss.co.jp/technology/report/pdf/18-07.pdf)

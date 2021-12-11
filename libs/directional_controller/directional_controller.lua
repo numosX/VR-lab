@@ -39,12 +39,35 @@ end
 local vector_to_direction = function(self, vector)
     local dx = vector.x
     local dy = vector.y
-    if math.abs(dx) > math.abs(dy) then
+    local dz = vector.z
+
+    if self._detect_use and math.abs(dx) < self._eps and math.abs(dy) < self._eps then
+        return "use"
+    end
+    if self._detect_z and math.abs(dz) > math.abs(dx) and math.abs(dz) > math.abs(dy) then
+        if dz < 0 then return "pull" else return "push" end 
+    elseif math.abs(dx) > math.abs(dy) then
         if dx < 0 then return "left" else return "right" end
     else
         if dy < 0 then return "down" else return "up" end
     end 
+end
 
+local enable_z_detection = function(self)
+    self._detect_z = true
+end
+
+local disable_z_detection = function(self)
+    self._detect_z = false
+end
+
+
+local enable_detect_use = function(self)
+    self._detect_use = true
+end
+
+local disable_detect_use = function(self)
+    self._detect_use = false
 end
 
 local methods = {
@@ -55,6 +78,10 @@ local methods = {
     calc_direction = calc_direction,
     get_direction_string = get_direction_string,
     vector_to_direction = vector_to_direction,
+    enable_z_detection = enable_z_detection,
+    disable_z_detection = disable_z_detection,
+    enable_detect_use = enable_detect_use,
+    disable_detect_use = disable_detect_use,
 }
 
 
@@ -74,7 +101,10 @@ local new = function(self, item_name)
         _q_world2item       = Quaternion.identity,
         _v_direction        = Vector3.__new(0,0,0),
         _direction_string   = nil,
-        _is_on              = false
+        _is_on              = false,
+        _detect_use         = false,
+        _detect_z           = false,
+        _eps                = 0.01 
     }
     return setmetatable(__member_params, {__index = methods})
 end

@@ -27,26 +27,37 @@ your_VCI_directory/
 local DirectionalControlHelper	= require "directional_controller"
 local controller	    		= DirectionalControlHelper:new("Cube") -- "VCI SubItem 名、この例では Cube"
 
+
+controller:enable_z_detection() -- z 方向の移動（push/pull）を検出する場合
+controller:enable_detect_use()  -- 動かさずにuseする動作を検出する場合
+
 function onUse(use)
     controller:pad_on()
 end
 
 function onUnuse(use)    
     controller:pad_off()
-    local direction = controller:get_direction_string()
+    local action = controller:get_direction_string()
 
-	if direction == "up" then
+	if action == "up" then
 		-- do something
-	elseif direction == "down" then
+	elseif action == "down" then
 		-- do something
-	elseif direction == "left" then
+	elseif action == "left" then
 		-- do something
-	elseif direction == "right" then
+	elseif action == "right" then
+		-- do something
+	elseif action == "pull" then
+		-- do something
+	elseif action == "push" then
+		-- do something
+	elseif action == "use" then
 		-- do something
 	end
 end
 
 ```
+
 
 ## 使用例
 
@@ -56,6 +67,7 @@ end
 ## 改変履歴
 * 2021/12/11 21:28 v0.1 公開
 * 2021/12/11 23:22 v0.1a バグ修正
+* 2021/12/12  2:15 v0.2 push/pull/use に対応
 
 ## 参考文献
 [クォータニオン計算便利ノート](https://www.mss.co.jp/technology/report/pdf/18-07.pdf)

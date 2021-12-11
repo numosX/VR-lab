@@ -1,3 +1,7 @@
+-- DirectionalControlHelper
+-- Copyright (c) 2021 ぬーもす 
+-- Twitter: @numosX 
+
 local is_on = function(self)
     return self._is_on
 end

@@ -28,7 +28,7 @@ end
 local calc_direction = function(self)
     local pos_i         = self._item.GetPosition()
     local dr            = pos_i - self._start_position
-    self._v_direction   = self._q_world2item*dr
+    self._v_direction   = Quaternion.Inverse(self._q_world2item)*dr
     self._direction_string  =  self:vector_to_direction(self._v_direction)
 end
 

@@ -62,13 +62,14 @@ local disable_z_detection = function(self)
 end
 
 
-local enable_detect_use = function(self)
+local enable_use_detection = function(self)
     self._detect_use = true
 end
 
-local disable_detect_use = function(self)
+local disable_use_detection = function(self)
     self._detect_use = false
 end
+
 
 local methods = {
     is_on = is_on,
@@ -80,8 +81,8 @@ local methods = {
     vector_to_direction = vector_to_direction,
     enable_z_detection = enable_z_detection,
     disable_z_detection = disable_z_detection,
-    enable_detect_use = enable_detect_use,
-    disable_detect_use = disable_detect_use,
+    enable_use_detection = enable_use_detection,
+    disable_use_detection = disable_use_detection,
 }
 
 

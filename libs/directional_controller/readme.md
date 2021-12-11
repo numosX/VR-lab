@@ -28,8 +28,8 @@ local DirectionalControlHelper	= require "directional_controller"
 local controller	    		= DirectionalControlHelper:new("Cube") -- "VCI SubItem 名、この例では Cube"
 
 
-controller:enable_z_detection() -- z 方向の移動（push/pull）を検出する場合
-controller:enable_detect_use()  -- 動かさずにuseする動作を検出する場合
+controller:enable_z_detection()   -- z 方向の移動（push/pull）を検出する場合
+controller:enable_use_detection() -- 動かさずにuseする動作を検出する場合
 
 function onUse(use)
     controller:pad_on()

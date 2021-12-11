@@ -1,6 +1,6 @@
 -- DirectionalControlHelper
 -- Copyright (c) 2021 ぬーもす 
--- Twitter: @numosX 
+-- This software is released under the MIT License.
 
 local is_on = function(self)
     return self._is_on

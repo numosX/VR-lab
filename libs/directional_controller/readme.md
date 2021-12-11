@@ -9,13 +9,10 @@ local DirectionalControlHelper	= require "directional_controller"
 local controller	    		= DirectionalControlHelper:new("Cube") -- "VCI SubItem 名、この例では Cube"
 
 function onUse(use)
-    if not vci.assets.IsMine then return end
     controller:pad_on()
 end
 
-function onUnuse(use)
-    if not vci.assets.IsMine then return end
-    
+function onUnuse(use)    
     controller:pad_off()
     local direction = controller:get_direction_string()
 

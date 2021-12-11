@@ -9,7 +9,8 @@
 ## ライブラリ
 
 * [ControlHelper](./control_helper/) : ２回useの判別などが簡単に実装できる。
-* [FxControlHelper](./fx_control_helper/) :　エフェクトと音楽の再生が簡単に実装できる。
+* [FxControlHelper](./fx_control_helper/) : エフェクトと音楽の再生が簡単に実装できる。
+* [DirectionalControlHelper](./directional_control_helper/) : 十字キーコントロールが簡単に実装できる。
 
 ## ライセンス
 

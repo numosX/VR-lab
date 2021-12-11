@@ -65,7 +65,7 @@ end
 	* 上下方向の入力で音量の上げ下げ
 	* 左右方向の入力で曲選択
 	* useで再生のOn/Off
-[![thumbnail](https://pbs.twimg.com/ext_tw_video_thumb/1469720234323972097/pu/img/QfXqjtR87SxDyZy4.jpg)](https://video.twimg.com/ext_tw_video/1469720234323972097/pu/vid/1280x720/PlAoiR8a2QdtZqTa.mp4)
+* [![thumbnail](https://pbs.twimg.com/ext_tw_video_thumb/1469720234323972097/pu/img/QfXqjtR87SxDyZy4.jpg)](https://video.twimg.com/ext_tw_video/1469720234323972097/pu/vid/1280x720/PlAoiR8a2QdtZqTa.mp4)
 
 
 

@@ -41,3 +41,7 @@ your_VCI_directory/
 ├ directional_controller.lua
 └ main.lua
 ```
+
+## 改変履歴
+* 2021/12/11 v0.1 公開
+* 2021/12/11 v0.1a バグ修正（座標系の回転と位置ベクトルの回転が逆だった）

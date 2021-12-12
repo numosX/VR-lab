@@ -36,6 +36,10 @@ local calc_direction = function(self)
     self._direction_string  =  self:vector_to_direction(self._v_direction)
 end
 
+local get_direction = function(self)
+    return self._v_direction
+end
+
 local get_direction_string = function(self)
     return self._direction_string
 end
@@ -81,6 +85,7 @@ local methods = {
     initialize = initialize,
 	pad_off = pad_off,
     calc_direction = calc_direction,
+    get_direction = get_direction,
     get_direction_string = get_direction_string,
     vector_to_direction = vector_to_direction,
     enable_z_detection = enable_z_detection,

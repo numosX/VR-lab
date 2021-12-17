@@ -1,3 +1,7 @@
+-- FxControlHelper
+-- Copyright (c) 2021 ぬーもす 
+-- This script is released under the MIT License.
+
 -- # Effect
 
 local set_effect = function(self, vci_item_name)

@@ -3,21 +3,7 @@
 ## 概要
 
 * EffekseerとAudioを簡単にコントロールできるクラス
-
-```lua
-local FxControlHelper = require "fx_control_helper"
-local fx_controller = FxControlHelper:new()
-
--- # Effekseer の設定
-fx_controller:set_effect("vci_subitem_name")
-fx_controller:disable_effect_loop()
--- # AudioClip の設定
-fx_controller:set_sound("audio_clip_name")
-fx_controller:set_sound_volume(0.5)
-fx_controller:disable_sound_loop()
--- # Effekseer と AudioClip が指定されているものを再生
-fx_controller:play()
-```
+* ファイル名を指定してぽぽぽぽーんと作りたい人向け
 
 ## 使用準備
 
@@ -41,6 +27,35 @@ your_VCI_directory/
 ```
 
 ## 使用方法
+
+
+```lua
+local FxControlHelper = require "fx_control_helper"
+local fx_controller = FxControlHelper:new()
+
+-- # Effekseer の設定
+fx_controller:set_effect("vci_subitem_name")
+fx_controller:disable_effect_loop()	-- １回だけ再生する場合
+
+-- # AudioClip の設定
+fx_controller:set_sound("audio_clip_name")
+fx_controller:set_sound_volume(0.5)
+fx_controller:disable_sound_loop()	-- １回だけ再生する場合
+
+function onUse(use)
+	fx_controller:play_effect() -- エフェクトの再生
+	fx_controller:play_sound() -- サウンドの再生
+end
+
+function onUnuse(use)
+	fx_controller:stop_effect() -- エフェクトの停止
+	fx_controller:stop_sound() -- サウンドの停止
+end
+
+```
+
+
+## 詳細な使い方
 
 ### 初期化
 ```lua

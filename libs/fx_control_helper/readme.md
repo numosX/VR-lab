@@ -44,12 +44,14 @@ fx_controller:disable_sound_loop()	-- １回だけ再生する場合
 is_playing = false
 
 function onUse(use)
-	if is_playing == true then
+	if not is_playing then
 		fx_controller:play_effect() -- エフェクトの再生
 		fx_controller:play_sound() -- サウンドの再生
+		is_playing = true
 	else 
 		fx_controller:stop_effect() -- エフェクトの停止
 		fx_controller:stop_sound() -- サウンドの停止
+		is_playing = false
 	end
 end
 

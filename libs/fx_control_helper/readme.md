@@ -18,7 +18,7 @@
 * Unity で VCI Object の設定を変える
 	* Script Size を 2 にする
 	* Name を それぞれ main と fx_control_helper にする
-* main.lua と同じディレクトリに fx_control_helper.lua　を配置
+* main.lua と同じディレクトリに fx_control_helper.lua を配置
 	* Workspace 以下のディレクトリ構造は、下記のようになるはず
 ```
 your_VCI_directory/
@@ -41,14 +41,16 @@ fx_controller:set_sound("audio_clip_name")
 fx_controller:set_sound_volume(0.5)
 fx_controller:disable_sound_loop()	-- １回だけ再生する場合
 
-function onUse(use)
-	fx_controller:play_effect() -- エフェクトの再生
-	fx_controller:play_sound() -- サウンドの再生
-end
+is_playing = false
 
-function onUnuse(use)
-	fx_controller:stop_effect() -- エフェクトの停止
-	fx_controller:stop_sound() -- サウンドの停止
+function onUse(use)
+	if is_playing == true then
+		fx_controller:play_effect() -- エフェクトの再生
+		fx_controller:play_sound() -- サウンドの再生
+	else 
+		fx_controller:stop_effect() -- エフェクトの停止
+		fx_controller:stop_sound() -- サウンドの停止
+	end
 end
 
 ```

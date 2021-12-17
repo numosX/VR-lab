@@ -28,7 +28,6 @@ your_VCI_directory/
 
 ## 使用方法
 
-
 ```lua
 local FxControlHelper = require "fx_control_helper"
 local fx_controller = FxControlHelper:new()
